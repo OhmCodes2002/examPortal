@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import AIProctor from './AIProctor';
+import PracticeArena from './PracticeArena';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -101,10 +102,7 @@ function App() {
         )}
 
         {activeTab === 'arena' && (
-          <header>
-            <h1>Practice Arena</h1>
-            <p style={{ color: 'var(--text-secondary)' }}>Unproctored coding practice.</p>
-          </header>
+          <PracticeArena />
         )}
       </main>
     </div>
